@@ -1,0 +1,13 @@
+https://github.com/luksa/kubernetes-in-action/
+
+#adding docker to group
+sudo usermod -aG docker ${USER}
+
+#adding microk8 to group
+sudo usermod -a -G microk8s $USER
+sudo chown -f -R $USER ~/.kube
+You will also need to re-enter the session for the group update to take place:
+su - $USER
+
+#using local images
+https://microk8s.io/docs/registry-images
