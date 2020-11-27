@@ -23,5 +23,7 @@ sudo microk8s kubectl port-forward kubia-deployment-6885b44c5f-kk87z 8888:8080
 
 
 
+
+
 sudo microk8s stop
 clear
