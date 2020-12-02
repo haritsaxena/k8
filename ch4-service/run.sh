@@ -25,8 +25,9 @@ curl http://default.svc.cluster.local
 # ingress don't use the service in between, directly connects to pod.
 sudo microk8s kubectl apply -f ingress-service.yml
 
-sudo microk8s enable ingress
+#sudo microk8s enable ingress
 sudo microk8s kubectl get ingress
+sudo microk8s kubectl delete ingress http-ingress
 clear
 
 #Unlike liveness probes, if a container fails the readiness check, it won’t be killed or
